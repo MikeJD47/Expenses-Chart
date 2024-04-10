@@ -1,0 +1,163 @@
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --pale-orange: hsl(33, 100%, 98%);
+}
+
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400, 700;
+  font-style: normal;
+}
+
+body {
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cream);
+}
+
+.container {
+  height: fit-content;
+  width: 400px;
+  min-width: 325px;
+  margin: 30px;
+}
+
+.my-balance-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 10vh;
+  background-color: var(--soft-red);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  color: var(--pale-orange);
+}
+
+.balance-header {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.balance-amount {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.circles {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+}
+
+.circle1 {
+  background-color: var(--dark-brown);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.circle2 {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  border: 2px solid white;
+  border-radius: 50%;
+  top: 0rem;
+  right: 1.5rem;
+}
+
+.spending-wrapper {
+  background-color: var(--pale-orange);
+  border-radius: 1rem;
+  height: 100%;
+  width: auto;
+  margin-top: 20px;
+}
+
+.spending-wrapper h1 {
+  padding: 1rem 1.5rem;
+  margin: 0;
+}
+
+.chart-div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  padding: 0 1.5rem;
+}
+
+.total-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 125px;
+  padding: 1rem 1.5rem;
+}
+
+.total-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--cream);
+  width: 80%;
+  height: 1.5px;
+  margin: 0 auto;
+}
+
+.total-block p:first-child {
+  color: var(--medium-brown);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.total-block p {
+  margin: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.percent-block p:last-child {
+  color: var(--medium-brown);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.percent-block p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--dark-brown);
+}
+
+@media screen and (max-width: 405px) {
+  .spending-wrapper h1 {
+    font-size: 1.5rem;
+  }
+
+  .total-block p {
+    margin: 10px;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+}
