@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Expenses Chart]([https://your-solution-url.com](https://mikejd47.github.io/Expenses-Chart/))
+- Solution URL: [Expenses Chart](https://mikejd47.github.io/Expenses-Chart/)
 
 ## My process
 
